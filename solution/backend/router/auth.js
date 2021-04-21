@@ -1,4 +1,5 @@
-const uuidv4 = require("uuid/v4");
+//const uuidv4 = require("uuid/v4"); - fix for the below found here: https://www.gitmemory.com/issue/doronnahum/feathers-mongoose-casl/25/658900304
+const { v4: uuidv4 } = require('uuid');
 const express = require("express");
 const router = express.Router();
 const DB = require("../db");

@@ -5,5 +5,11 @@
   "scripts": {
     "backend:start": "cd backend && node index.js",
     "backend:setup": "cd backend && yarn install"
+  },
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  },
+  "resolutions": {
+    "node-sass/node-gyp": "^6.0.0"
   }
 }

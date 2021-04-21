@@ -1,5 +1,5 @@
 body {
-  background-color: #FFCC00;
+  background-color: #61dafb;
   padding: 20px;
   margin: 0;
 }
@@ -25,6 +25,7 @@ ul.header li a {
 .content {
   background-color: #FFF;
   padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .content h2 {
   padding: 0;
