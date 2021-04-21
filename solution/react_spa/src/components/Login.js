@@ -1,11 +1,5 @@
 import React from 'react';
 import './Login.css';
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
-import SignUp from "./SignUp";
 
 export default function Login() {
   return(
@@ -23,12 +17,6 @@ export default function Login() {
       <div>
         <button type="submit">Submit</button>
       </div>
-      <HashRouter>
-        <NavLink exact to="/signup">Sign Up</NavLink>
-      <div className="content">
-        <Route exact path="/signup" component={SignUp}/>
-      </div>
-      </HashRouter>
     </form>
     </div>
   )

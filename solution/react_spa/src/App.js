@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import Login from './components/Login';
+import SignUp from './components/SignUp';
 import {
   Route,
   NavLink,
@@ -13,7 +14,19 @@ import Contact from "./components/Contact";
 function App() {
   const [token, setToken] = useState();
   if(!token) {
-    return <Login setToken={setToken} />
+    return (
+      <div>
+        {/* <Login setToken={setToken} /> */}
+        <HashRouter>
+          <NavLink exact to="/login">Login</NavLink>
+          <NavLink exact to="/signup">Sign Up</NavLink>
+          <div className="content">
+          <Route exact path="/login" component={Login}/>
+          <Route exact path="/signup" component={SignUp}/>
+          </div>
+        </HashRouter>
+      </div>
+    )
   }
   return (
     <div className="App">
