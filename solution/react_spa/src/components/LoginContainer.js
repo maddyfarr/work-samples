@@ -11,6 +11,9 @@ import SignUp from "./SignUp";
 export default function LoginContainer() {
     return(
     <div className="login-wrapper">
+        <h1>
+            Tanda
+        </h1>
     <HashRouter>
     <NavLink exact to="/login">Login</NavLink>
     <NavLink exact to="/signup">Sign Up</NavLink>
